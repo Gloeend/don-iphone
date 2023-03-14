@@ -4,7 +4,7 @@ import c from './style.module.css'
 const CharsArticle = ({title, items}) => {
 
 
-  const Mapped = () => items.map((item) => <li className={c.row}> <span>{item.label}</span> <span> {item.value}</span></li>)
+  const Mapped = () => items.map((item, ind) => <li className={c.row} key={ind}> <span>{item.label}</span> <span> {item.value}</span></li>)
 
   return (
     <article className={c.article}>

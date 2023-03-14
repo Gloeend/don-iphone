@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import c from './style.module.css'
 
-const Mapped = ({items}) => items.map((el) => <li className={c.link}><Link href={el.link}>{el.name}</Link></li>)
+const Mapped = ({items}) => items.map((el, ind) => <li className={c.link} key={ind}><Link href={el.link}>{el.name}</Link></li>)
 
 const Breadcrumbs = ({items}) => {
   return (
