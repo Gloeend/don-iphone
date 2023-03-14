@@ -1,0 +1,60 @@
+.input {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input:checked::after {
+  width: 10px;
+  height: 10px;
+  content: "";
+  display: block;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
+}
+
+.label {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.container {
+  padding: 12px 0;
+  gap: 10px;
+  display: flex;
+  border-top: 1px solid rgba(188, 188, 198, 0.2);
+}
+
+.label span:first-child {
+  font-size: 0.875rem;
+}
+.label span:last-child {
+  background: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.input:disabled {
+  background: #bbbbbb;
+}
+
+.input:disabled + label span {
+  color: #000 !important;
+  -webkit-background-clip:border-box;
+  -webkit-text-fill-color:#000;
+  background: none;
+  background-clip: text;
+  text-fill-color: #000;
+  background-clip:border-box;
+  opacity: 0.3;
+}

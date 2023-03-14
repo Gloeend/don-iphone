@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap");
+.wrap {
+  width: 100%;
+  padding-left: 13.02%;
+  padding-right: 13.02%;
+}
+body {
+  font-family: "Exo 2";
+  background: #edfcff;
+}
+h1 {
+  font-family: "Exo 2";
+  font-size: 2.25rem;
+}
+
+.purple-gradient {
+  background: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

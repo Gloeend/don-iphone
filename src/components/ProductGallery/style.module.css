@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-flow: column;
+  margin-right: 1rem;
+}
+
+.sidebar img {
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  object-position: center;
+  object-fit: contain;
+}
+
+.sidebar button:not(:first-child) {
+  margin-top: 10px;
+}
+
+.sidebar button {
+  padding: 7px;
+  height: 60px;
+  width: 60px;
+  border: 1px solid transparent;
+}
+
+.active {
+  border-color:#56BDC5 !important;
+}
+
+.preview {
+  min-width: 400px;
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
+  object-position: top;
+}

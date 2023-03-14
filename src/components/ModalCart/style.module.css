@@ -1,0 +1,104 @@
+.modal {
+  position: absolute;
+  background: #ffffff;
+  border: 2px solid rgba(35, 35, 35, 0.3);
+  border-radius: 20px;
+  padding: 40px 0 29px 0;
+  width: 100%;
+  max-width: 670px;
+  right: 13.02%;
+  top: 100%;
+}
+
+.article h5 {
+  font-size: 1.125rem;
+  width: 300px;
+}
+
+.container {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  min-height: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.container::-webkit-scrollbar-thumb {
+  box-shadow: inset 20px 20px 6px #232323;
+  border-radius: 5px;
+}
+
+.preview {
+  max-width: 80px;
+}
+
+.price {
+  font-size: 1.125rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.article {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  grid-template-columns: repeat(5, fit-content(100%));
+  padding: 0 37px;
+  padding-bottom: 20px;
+}
+
+.ui {
+  padding: 27px 50px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button-span {
+  padding: 0 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.counter {
+  width: 17px;
+  display: flex;
+  height: 17px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(90deg, #DA22FF 0%, #9733EE 100%);
+  border-radius: 50px;
+}
+
+.item__ui {
+  gap: 5px;
+  align-items: center;
+  display: flex;
+}
+
+.overall-price span {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.overall-price {
+  display: flex;
+  gap: 10px;
+}

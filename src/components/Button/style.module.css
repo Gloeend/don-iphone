@@ -1,0 +1,47 @@
+.button {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 60px;
+  font-weight: 500;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1rem;
+}
+
+.purple {
+  background: linear-gradient(0deg, #DA22FF, #DA22FF);
+  color: #fff;
+  font-weight: 600;
+}
+
+.gradient {
+  background: linear-gradient(255.46deg, rgba(61, 115, 235, 0.8) 10.35%, rgba(222, 143, 255, 0.8) 89.8%), #ffffff;
+  box-shadow: 0px 0px 16px rgba(121, 175, 255, 0.6);
+  color: #fff;
+  font-weight: 600;
+}
+
+.gray {
+  background: #232323;
+  border: 2px solid #ffffff;
+  border-radius: 60px;
+  color: #fff;
+}
+
+.red {
+  background: linear-gradient(86.29deg, #ed213a 3.04%, #93291e 155.19%);
+  border-radius: 60px;
+  color: #fff;
+}
+
+.default {
+  border: 2px solid #232323;
+  color: #232323;
+}
+
+.button svg {
+  display: block;
+}
+
+.undegged {
+  border-radius: 5px;
+}

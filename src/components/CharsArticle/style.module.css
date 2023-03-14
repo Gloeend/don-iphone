@@ -1,0 +1,34 @@
+.article {
+  padding: 0 60px;
+}
+
+.article h3 {
+  margin-bottom: 50px;
+}
+
+.article:not(:first-child) {
+  margin-top: 50px;
+}
+
+.content span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.content span:first-child {
+  opacity: 0.6;
+}
+
+.content {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row:not(:first-child) {
+  margin-top: 15px;
+}
