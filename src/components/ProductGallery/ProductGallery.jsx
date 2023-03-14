@@ -6,7 +6,7 @@ const ProductGallery = ({items}) => {
 
   const [now, setNow] = useState(0)
   
-  const Mapped = () => items.map((el, ind) => <button key={ind} className={ind === now ? c.active : null} onClick={() => setNow(ind)}><img src={el.image} /></button>)
+  const Mapped = () => items.map((el, ind) => <button key={ind} className={ind === now ? c.active : null} onClick={() => setNow(ind)}><img src={el.image} alt="Preview" /></button>)
 
   return (
     <div className={c.container}>
