@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "@components/Header/Header";
-import c from "@app/styles/Home.module.css";
+import c from "@app/styles/Product.module.css";
 import Breadcrumbs from "@app/components/Breadcrumbs/Breadcrumbs";
 import ProductGallery from "@app/components/ProductGallery/ProductGallery";
 import RadioButton from "@app/components/RadioButton/RadioButton";
@@ -77,7 +77,7 @@ const images = [
   },
 ];
 
-export default function Home() {
+export default function Product() {
   return (
     <>
       <Head>
