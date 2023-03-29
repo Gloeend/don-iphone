@@ -10,6 +10,7 @@ import ipad from "@pictures/home/ipad.png";
 import macbook from "@pictures/home/macbook.png";
 import SectionSlider from "@components/SectionSlider/SectionSlider";
 import Footer from "@components/Footer/Footer";
+import ContactForm from "@components/ContactForm/ContactForm";
 
 const IntroductionSlider = () => {
     const [active, setActive] = useState(0);
@@ -82,8 +83,8 @@ const IntroductionSlider = () => {
         ));
 
     const Container = styled.div`
-    background-image: url("${items[active].preview}");
-  `;
+      background-image: url("${items[active].preview}");
+    `;
 
     return (
         <div className={c["introduction-slider"]}>
@@ -157,8 +158,8 @@ export default function Home() {
 
     const SubIntroductionTemplate = ({background, name, description}) => {
         let Template = styled.div`
-      background-image: url("${background}");
-    `;
+          background-image: url("${background}");
+        `;
 
         return (
             <Template className={c['sub-introduction__item']}>
@@ -195,8 +196,13 @@ export default function Home() {
                 <SectionSlider items={slider}>
                     <h2 className="text-red">Скидки %%%</h2>
                 </SectionSlider>
+                <section className={c.section + ' ' + c['form-section']}>
+                    <h2>Остались вопросы?</h2>
+                    <p className={c['form-description']}>Оставьте онлайн заявку, после чего с вами свяжется наш специалист! И да, это бесплатно</p>
+                    <ContactForm></ContactForm>
+                </section>
             </main>
-            <Footer />
+            <Footer/>
         </>
     );
 }
