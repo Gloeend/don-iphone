@@ -1,0 +1,11 @@
+.section__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section__header h2 {
+    font-size: 2.875rem;
+}

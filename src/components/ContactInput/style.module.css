@@ -1,0 +1,20 @@
+.input {
+    font-family: "Exo 2", sans-serif;
+    padding: 20px 34px;
+    color: #232323;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.01);
+    border: 3px solid #DA22FF;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    font-size: 2.25rem;
+}
+
+.input::placeholder {
+    color: #232323;
+    opacity: .3;
+}
+
+.textarea {
+    resize: none;
+}

@@ -22,7 +22,8 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.2",
     "redux-wrapper": "^0.0.1",
-    "styled-components": "^5.3.8"
+    "styled-components": "^5.3.8",
+    "@react-buddy/ide-toolbox": "^2.3.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1"

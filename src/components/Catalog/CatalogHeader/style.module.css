@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    display: flex;
+}
+
+.header h1 {
+    font-size: 1.75rem;
+    margin-right: 5px;
+}
+
+.header h1, .header span {
+    font-family: 'Inter', sans-serif;
+}
+
+.header span {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.header span::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.25);
+}

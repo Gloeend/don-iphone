@@ -7,6 +7,7 @@ import RadioButton from "@app/components/RadioButton/RadioButton";
 import Button from "@app/components/Button/Button";
 import LikeProductSlider from "@app/components/LikeProductSlider/LikeProductSlider";
 import CharsArticle from "@app/components/CharsArticle/CharsArticle";
+import Footer from "@components/Footer/Footer";
 
 const breads = [
   { name: "Главная", link: "/" },
@@ -129,6 +130,7 @@ export default function Product() {
           <LikeProductSlider items={slider} />
         </section>
       </main>
+      <Footer />
     </>
   );
 }

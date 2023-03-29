@@ -120,3 +120,17 @@
   gap: 1rem;
   justify-content: space-between;
 }
+
+.form-description {
+  font-size: 3rem;
+  opacity: 0.6;
+}
+
+.form-section {
+  max-width: 60%;
+}
+
+.form-section h2 {
+  font-weight: 600;
+  font-size: 3.5rem;
+}

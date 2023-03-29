@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    background: #000;
+    margin-top: 180px;
+    color: white;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul {
+    flex-grow: 1;
+    display: flex;
+    height: inherit;
+    gap: 10px;
+    flex-flow: column;
+}
+
+.footer a {
+    width: fit-content;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.plain-text {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.copyright {
+    font-size: .875rem;
+    opacity: 0.6;
+}
+

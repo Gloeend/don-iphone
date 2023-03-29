@@ -1,0 +1,7 @@
+.section {
+
+}
+
+.section:not(:first-child) {
+    margin-top: 80px;
+}

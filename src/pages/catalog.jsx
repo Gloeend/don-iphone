@@ -13,11 +13,7 @@ const breadcrumbsItems = [
 ]
 
 
-export default function Service() {
-
-    <Breadcrumbs items={breadcrumbsItems} />
-
-
+export default function Catalog() {
     return (
         <>
             <Head>
@@ -28,6 +24,7 @@ export default function Service() {
             </Head>
             <Header/>
             <main className="wrap">
+                <Breadcrumbs items={breadcrumbsItems} />
                 <section className={[c['section'], c['section--catalog']].join(' ')}>
                     <CatalogHeader />
 
