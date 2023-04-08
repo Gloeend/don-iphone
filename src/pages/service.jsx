@@ -16,10 +16,9 @@ import IndependentPreview from "@pictures/services/independent.png";
 import InsurancePreview from "@pictures/services/insurance.png";
 
 
-
 const breadcrumbsItems = [
-    {name :"Главная", link: "/"},
-    {name :"Услуги", link: "/service"},
+    {name: "Главная", link: "/"},
+    {name: "Услуги", link: "/service"},
 ]
 
 export default function Service() {
@@ -34,7 +33,7 @@ export default function Service() {
             </Head>
             <Header/>
             <main className="wrap">
-                <Breadcrumbs items={breadcrumbsItems} />
+                <Breadcrumbs items={breadcrumbsItems}/>
                 <section className={[c['section'], c['section--catalog']].join(' ')}>
                     <h1 className="mb-30">Услуги</h1>
                     <TabRow>
@@ -86,7 +85,7 @@ export default function Service() {
                     </TabRow>
                 </section>
             </main>
-            <Footer />
+            <Footer/>
         </>
     );
 }

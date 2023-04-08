@@ -11,6 +11,20 @@ import macbook from "@pictures/home/macbook.png";
 import SectionSlider from "@components/SectionSlider/SectionSlider";
 import Footer from "@components/Footer/Footer";
 import ContactForm from "@components/ContactForm/ContactForm";
+import TabRow from "@components/TabRow/TabRow";
+import Tab from "@components/Tab/Tab";
+import ServiceCentrePreview from "@pictures/services/service_centre.png";
+import CreditPreview from "@pictures/services/rassrochka.png";
+import SberPreview from "@pictures/services/sberbank.png";
+import DeliveryPreview from "@pictures/services/delivery.png";
+import GiftPreview from "@pictures/services/gift.png";
+import TradePreview from "@pictures/services/trade_in.png";
+import BuyoutPreview from "@pictures/services/buyout.png";
+import IndependentPreview from "@pictures/services/independent.png";
+import InsurancePreview from "@pictures/services/insurance.png";
+import Section from "@components/Section/Section";
+import SectionHeader from "@components/SectionHeader/SectionHeader";
+import ArrowLink from "@components/ArrowLink/ArrowLink";
 
 const IntroductionSlider = () => {
     const [active, setActive] = useState(0);
@@ -196,6 +210,26 @@ export default function Home() {
                 <SectionSlider items={slider}>
                     <h2 className="text-red">Скидки %%%</h2>
                 </SectionSlider>
+                <Section className={c.section + ' ' + c['section--section']}>
+                    <SectionHeader title="Услуги"><ArrowLink link="/service">посмотреть все услуги</ArrowLink></SectionHeader>
+                    <TabRow>
+                        <Tab
+                            title="Сервисный центр"
+                            description="Мы не только продаем, но и чиним! Квалифицированные специалисты, оригинальные запчасти и многое другое!"
+                            preview={ServiceCentrePreview.src}
+                        ></Tab>
+                        <Tab
+                            title="Рассрочка и кредит"
+                            description="Почти любой товар из каталога можно приобрести в рассрочку без переплаты на срок до 6 месяцев"
+                            preview={CreditPreview.src}
+                        ></Tab>
+                        <Tab
+                            title="Рассрочка от СберБанка"
+                            description="Рассмотрим заявку за несколько минут. Не нужно идти в банк и подписывать документы — всё онлайн"
+                            preview={SberPreview.src}
+                        ></Tab>
+                    </TabRow>
+                </Section>
                 <section className={c.section + ' ' + c['form-section']}>
                     <h2>Остались вопросы?</h2>
                     <p className={c['form-description']}>Оставьте онлайн заявку, после чего с вами свяжется наш специалист! И да, это бесплатно</p>
