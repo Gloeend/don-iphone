@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Dropdown = () => {
   //
-} 
+}
 
 
 const LeftLinkCol = () => {
@@ -24,9 +24,9 @@ const LeftLinkCol = () => {
 const RightLinkCol = () => {
   return (
     <>
-      <li><Link href="#"><Button>Каталог</Button></Link></li>
-      <li><Link href="#"><Button>Сервис</Button></Link></li>
-      <li><Link href="#"><Button>Контакты</Button></Link></li>
+      <li><Link href="/catalog"><Button>Каталог</Button></Link></li>
+      <li><Link href="/service"><Button>Сервис</Button></Link></li>
+      <li><Link href="/contacts"><Button>Контакты</Button></Link></li>
     </>
   )
 }

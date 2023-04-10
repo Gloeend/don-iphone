@@ -17,7 +17,7 @@ const SectionSlider = ({children, items}) => {
     const Mapped = () =>
         items.map((item) => (
             <SplideSlide>
-                <Item item={item}/>
+                <Item name={item.name} price={item.price} preview={item.preview} />
             </SplideSlide>
         ));
 

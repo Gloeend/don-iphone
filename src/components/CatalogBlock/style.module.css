@@ -1,0 +1,11 @@
+.catalog {
+    margin-top: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr .265fr;
+    grid-column-gap: 3.75rem;
+}
+
+.catalog-row {
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+

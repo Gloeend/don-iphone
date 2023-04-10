@@ -2,13 +2,13 @@ import c from './style.module.css';
 import Button from "@components/Button/Button";
 import React from "react";
 
-const Item = ({item}) => {
+const Item = ({name = '', preview = '', price = ''}) => {
     return (
         <article className={c.article}>
-            <img src={item.preview} alt={"Preview " + item.name}/>
-            <h4>{item.name}</h4>
+            <img src={preview} alt={"Preview " + name}/>
+            <h4>{name}</h4>
             <div className={c.ui}>
-                <span>От: {item.price}</span>
+                <span>От: {price}₽</span>
                 <Button color="purple">
                     <div className={c.button}>
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">

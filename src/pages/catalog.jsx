@@ -4,12 +4,14 @@ import CatalogHeader from "@components/Catalog/CatalogHeader/CatalogHeader";
 import c from "@app/styles/Catalog.module.css";
 import Breadcrumbs from "@components/Breadcrumbs/Breadcrumbs";
 import Footer from "@components/Footer/Footer";
+import CatalogBlock from "@components/CatalogBlock/CatalogBlock";
+import {items} from "@app/common/samples/items";
 
 
 const breadcrumbsItems = [
-    {name :"Главная", link: "/"},
-    {name :"Apple", link: "/"},
-    {name :"Apple iPhone", link: "/"},
+    {name: "Главная", link: "/"},
+    {name: "Apple", link: "/"},
+    {name: "Apple iPhone", link: "/"},
 ]
 
 
@@ -24,13 +26,13 @@ export default function Catalog() {
             </Head>
             <Header/>
             <main className="wrap">
-                <Breadcrumbs items={breadcrumbsItems} />
+                <Breadcrumbs items={breadcrumbsItems}/>
                 <section className={[c['section'], c['section--catalog']].join(' ')}>
-                    <CatalogHeader />
-
+                    <CatalogHeader/>
+                    <CatalogBlock items={items}></CatalogBlock>
                 </section>
             </main>
-            <Footer />
+            <Footer/>
         </>
     );
 }

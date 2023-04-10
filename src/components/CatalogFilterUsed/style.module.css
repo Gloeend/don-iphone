@@ -1,0 +1,25 @@
+.form {
+    width: 100%;
+    display: flex;
+}
+
+.button {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: 9px 0;
+    background: #F1F1F6;
+    color: #BCBCC6;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.button:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.active {
+    background: #232323;
+    color: #BCBCC6;
+    border-right: .9px solid #E0E1E8;
+}

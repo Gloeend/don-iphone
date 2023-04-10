@@ -2,11 +2,8 @@ import React from "react"
 import c from './style.module.css'
 import {useSelector} from "react-redux";
 
-const title = 'iPhone'
-const count = 117
 
-
-const CatalogHeader = () => {
+const CatalogHeader = ({title = 'iPhone', count = '117'}) => {
     return (
         <div className={c.header}>
             <h1>{title}</h1>

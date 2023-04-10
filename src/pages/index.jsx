@@ -25,65 +25,10 @@ import InsurancePreview from "@pictures/services/insurance.png";
 import Section from "@components/Section/Section";
 import SectionHeader from "@components/SectionHeader/SectionHeader";
 import ArrowLink from "@components/ArrowLink/ArrowLink";
+import {items} from "@app/common/samples/items";
 
 const IntroductionSlider = () => {
     const [active, setActive] = useState(0);
-    const items = [
-        {
-            attr: "iPhone 14 Pro",
-            name: "iPhone 14 Pro",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "iPhone 14",
-            name: "Apple iPhone 14 и 14 Plus",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "Watch",
-            name: "Watch",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "AirPods Pro",
-            name: "AirPods Pro",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "iPhone 13 Pro",
-            name: "iPhone 13 Pro",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "iPhone 13",
-            name: "iPhone 13",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "iPhone SE",
-            name: "iPhone SE",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "Samsung",
-            name: "Samsung",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-        {
-            attr: "Xiaomi",
-            name: "Xiaomi",
-            preview:
-                "https://external-preview.redd.it/zrkbXuUil0VRvXkQk7Ax-otqmDzaDBY3HkglpUcAQlA.jpg?auto=webp&s=d201444e059e4c4776c98e1a0b96643ff55cb9cc",
-        },
-    ];
 
     const SwitchButtons = () =>
         items.map((item, ind) => (
@@ -142,31 +87,31 @@ export default function Home() {
             preview:
                 "https://c.dns-shop.ru/thumb/st4/fit/500/500/449cb666b727649cff62fe809f7aef8b/1e1c38dddec3afc30852238aba122d91dd490a33a5eeff1c86cdf090fc81130f.jpg.webp",
             name: "Наушники Apple AirPods Pro с зарядным футляром MagSafe (2-го поколения; 2022)",
-            price: "114 990 ₽",
+            price: "114 990",
         },
         {
             preview:
                 "https://c.dns-shop.ru/thumb/st4/fit/500/500/449cb666b727649cff62fe809f7aef8b/1e1c38dddec3afc30852238aba122d91dd490a33a5eeff1c86cdf090fc81130f.jpg.webp",
             name: "Наушники Apple AirPods Pro с зарядным футляром MagSafe (2-го поколения; 2022)",
-            price: "114 990 ₽",
+            price: "114 990",
         },
         {
             preview:
                 "https://c.dns-shop.ru/thumb/st4/fit/500/500/449cb666b727649cff62fe809f7aef8b/1e1c38dddec3afc30852238aba122d91dd490a33a5eeff1c86cdf090fc81130f.jpg.webp",
             name: "Наушники Apple AirPods Pro с зарядным футляром MagSafe (2-го поколения; 2022)",
-            price: "114 990 ₽",
+            price: "114 990",
         },
         {
             preview:
                 "https://c.dns-shop.ru/thumb/st4/fit/500/500/449cb666b727649cff62fe809f7aef8b/1e1c38dddec3afc30852238aba122d91dd490a33a5eeff1c86cdf090fc81130f.jpg.webp",
             name: "Наушники Apple AirPods Pro с зарядным футляром MagSafe (2-го поколения; 2022)",
-            price: "114 990 ₽",
+            price: "114 990",
         },
         {
             preview:
                 "https://c.dns-shop.ru/thumb/st4/fit/500/500/449cb666b727649cff62fe809f7aef8b/1e1c38dddec3afc30852238aba122d91dd490a33a5eeff1c86cdf090fc81130f.jpg.webp",
             name: "Наушники Apple AirPods Pro с зарядным футляром MagSafe (2-го поколения; 2022)",
-            price: "114 990 ₽",
+            price: "114 990",
         },
     ];
 

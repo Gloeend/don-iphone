@@ -1,0 +1,41 @@
+.form {
+    display: flex;
+    width: 100%;
+}
+
+.form input {
+    width: 50%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: #F1F1F6;
+    border-right: 0.978648px solid #E0E1E8;
+    text-align: center;
+}
+
+.form input::placeholder {
+    color: #BCBCC6;
+}
+
+.form input:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+.form input:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.form input[type="number"]::-webkit-outer-spin-button,
+.form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form input[type='number'],
+.form input[type="number"]:hover,
+.form input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
