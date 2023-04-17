@@ -6,6 +6,8 @@ import Breadcrumbs from "@components/Breadcrumbs/Breadcrumbs";
 import Footer from "@components/Footer/Footer";
 import CatalogBlock from "@components/CatalogBlock/CatalogBlock";
 import {items} from "@app/common/samples/items";
+import MailDistribution from "@components/MailDistribution/MailDistribution";
+import SectionSlider from "@components/SectionSlider/SectionSlider";
 
 
 const breadcrumbsItems = [
@@ -28,9 +30,13 @@ export default function Catalog() {
             <main className="wrap">
                 <Breadcrumbs items={breadcrumbsItems}/>
                 <section className={[c['section'], c['section--catalog']].join(' ')}>
-                    <CatalogHeader/>
+                    <CatalogHeader />
                     <CatalogBlock items={items}></CatalogBlock>
                 </section>
+                <SectionSlider items={items}>
+                    <h4 className={c.slider_title}>Популярные товары в этой категории</h4>
+                </SectionSlider>
+                <MailDistribution />
             </main>
             <Footer/>
         </>

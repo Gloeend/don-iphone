@@ -41,46 +41,55 @@ export default function Service() {
                             title="Сервисный центр"
                             description="Мы не только продаем, но и чиним! Квалифицированные специалисты, оригинальные запчасти и многое другое!"
                             preview={ServiceCentrePreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Рассрочка и кредит"
                             description="Почти любой товар из каталога можно приобрести в рассрочку без переплаты на срок до 6 месяцев"
                             preview={CreditPreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Рассрочка от СберБанка"
                             description="Рассмотрим заявку за несколько минут. Не нужно идти в банк и подписывать документы — всё онлайн"
                             preview={SberPreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Доставка и оплата"
                             description="Доставка от 390 ₽ на следующий день и самовывоз в розничном магазине. А еще можно получить заказ в пункте выдачи и постамате"
                             preview={DeliveryPreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Подарочные сертификаты"
                             description="Подарите электронный сертификат. Ведь вариантов отличных подарков так много!"
                             preview={GiftPreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Trade-in"
                             description="Сдайте свои устройства в трейд-ин и получите выгоду при покупке новых"
                             preview={TradePreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Выкуп устройства"
                             description="Сдайте свои устройства и сразу получите деньги"
                             preview={BuyoutPreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Независимые сервисные центры"
                             description="Отремонтируем ваше устройство Apple независимо от того, где и когда вы его приобрели"
                             preview={IndependentPreview.src}
+                            link="/service/remont"
                         ></Tab>
                         <Tab
                             title="Программы страхования вашей техники"
                             description="Защитите свои устройства от самых распространённых рисков, в том числе не покрываемых гарантией производителя"
                             preview={InsurancePreview.src}
+                            link="/service/remont"
                         ></Tab>
                     </TabRow>
                 </section>
