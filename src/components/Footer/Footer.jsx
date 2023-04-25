@@ -15,19 +15,19 @@ const Footer = () => {
                         <p className={[c['plain-text'], c['copyright']].join(' ')}>D.I© All rights reserved</p>
                     </li>
                 </ul>
-                <ul>
+                <ul className={c.list}>
                     <p className={[c['plain-text']].join(' ')}>Don.iphone© 2022</p>
                     <Link className="gradient" href="/">Политика</Link>
                     <Link className="gradient" href="/">Условия</Link>
                     <Link className="gradient" href="/">Гарантия</Link>
                 </ul>
-                <ul>
+                <ul className={c.list}>
                     <Link className="gradient" href="/">Каталог</Link>
                     <Link className="gradient" href="/">Главная</Link>
                     <Link className="gradient" href="/">Новости</Link>
                 </ul>
 
-                <ul style={{textAlign: "right", flexGrow: "5", alignItems: "flex-end"}}>
+                <ul className={c.list} style={{textAlign: "right", flexGrow: "5", alignItems: "flex-end"}}>
                     <Link className="gradient" href="/">О нас</Link>
                     <Link className="gradient" href="/">Связь с нами</Link>
                     <Link className="gradient" href="/">Вакансии</Link>

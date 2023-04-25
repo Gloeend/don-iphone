@@ -35,4 +35,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .article {
+        padding: 10px;
+    }
+    .article img {
+        height: 125px;
+        object-fit: contain;
+    }
 }

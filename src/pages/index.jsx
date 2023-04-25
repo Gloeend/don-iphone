@@ -26,6 +26,7 @@ import Section from "@components/Section/Section";
 import SectionHeader from "@components/SectionHeader/SectionHeader";
 import ArrowLink from "@components/ArrowLink/ArrowLink";
 import {items} from "@app/common/samples/items";
+import {Splide, SplideSlide, SplideTrack} from "@splidejs/react-splide";
 
 const IntroductionSlider = () => {
     const [active, setActive] = useState(0);
@@ -128,8 +129,23 @@ export default function Home() {
         );
     };
 
-    const SubIntroductionMapped = () => subIntroductionItems.map((item) => <SubIntroductionTemplate
-        background={item.background} name={item.name} description={item.description}/>);
+    const SubIntroductionMapped = () => subIntroductionItems.map((item) =>
+        <SplideSlide>
+            <SubIntroductionTemplate
+                background={item.background}
+                name={item.name}
+                description={item.description}
+            />
+        </SplideSlide>
+    );
+
+    // const SubIntroductionMapped = () => subIntroductionItems.map((item) =>
+    //     <SubIntroductionTemplate
+    //         background={item.background}
+    //         name={item.name}
+    //         description={item.description}
+    //     />
+    // );
 
     return (
         <>
@@ -144,10 +160,32 @@ export default function Home() {
                 <section className={c.section + " " + c["section--introduction"]}>
                     <IntroductionSlider/>
                 </section>
-                <section className={c.section}>
-                    <div className={c["sub-introduction"]}>
+                <section className={c.section + " " + c['section--sub-introduction']}>
+                    <Splide options={
+                        {
+                            arrows: false,
+                            gap: '5px',
+                            width: "100%",
+                            perPage: 5,
+                            pagination: false,
+                            breakpoints: {
+                                910: {
+                                    perPage: 4
+                                },
+                                768: {
+                                    perPage: 3
+                                },
+                                600: {
+                                    perPage: 2
+                                },
+                                375: {
+                                    perPage: 1
+                                }
+                            }
+                        }
+                    }>
                         <SubIntroductionMapped/>
-                    </div>
+                    </Splide>
                 </section>
                 <SectionSlider items={slider}>
                     <h2>Рекомендации</h2>
@@ -156,8 +194,9 @@ export default function Home() {
                     <h2 className="text-red">Скидки %%%</h2>
                 </SectionSlider>
                 <Section className={c.section + ' ' + c['section--section']}>
-                    <SectionHeader title="Услуги"><ArrowLink link="/service">посмотреть все услуги</ArrowLink></SectionHeader>
-                    <TabRow>
+                    <SectionHeader title="Услуги"><ArrowLink link="/service">посмотреть все
+                        услуги</ArrowLink></SectionHeader>
+                    <TabRow classNameArray={[c['row-to-column']]}>
                         <Tab
                             title="Сервисный центр"
                             description="Мы не только продаем, но и чиним! Квалифицированные специалисты, оригинальные запчасти и многое другое!"
@@ -177,7 +216,8 @@ export default function Home() {
                 </Section>
                 <section className={c.section + ' ' + c['form-section']}>
                     <h2>Остались вопросы?</h2>
-                    <p className={c['form-description']}>Оставьте онлайн заявку, после чего с вами свяжется наш специалист! И да, это бесплатно</p>
+                    <p className={c['form-description']}>Оставьте онлайн заявку, после чего с вами свяжется наш
+                        специалист! И да, это бесплатно</p>
                     <ContactForm></ContactForm>
                 </section>
             </main>

@@ -36,3 +36,30 @@
     opacity: 0.6;
 }
 
+@media screen and (max-width: 666px) {
+    .footer nav {
+        flex-flow: column;
+        align-items: center;
+    }
+    .copyright, .plain-text {
+        display: none !important;
+    }
+    .footer * {
+        align-self: center;
+        text-align: center !important;
+    }
+    .footer ul {
+        width: 100%;
+    }
+    .list p, .list a {
+        width: 100%;
+        display: block;
+        background: #131313;
+        border: 1px solid #6B6B6B;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .list:not(:first-child) {
+        margin-top: 30px;
+    }
+}

@@ -18,3 +18,14 @@
 .textarea {
     resize: none;
 }
+
+@media screen and (max-width: 768px){
+    .input {
+        padding: 1rem;
+        font-size: 1rem;
+        backdrop-filter: none;
+        letter-spacing: 1.55px;
+        text-transform: uppercase;
+        color: #232323;
+    }
+}

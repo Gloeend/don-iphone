@@ -8,3 +8,19 @@
   display: flex;
   justify-content: space-between;
 }
+
+
+@media screen and (max-width: 1010px) {
+  .nav {
+    flex-flow: column;
+    gap: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}

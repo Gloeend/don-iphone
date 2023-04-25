@@ -10,6 +10,25 @@ const options = {
     gap: "1.875rem",
     perPage: 5,
     arrows: false,
+    pagination: false,
+    breakpoints: {
+        1440: {
+            perPage: 4,
+        },
+        990: {
+            perPage: 3,
+        },
+        768: {
+            perPage: 3,
+        },
+        700: {
+            perPage: 2,
+            gap: "1rem"
+        },
+        375: {
+            perPage: 1
+        }
+    }
 };
 
 const SectionSlider = ({children, items}) => {

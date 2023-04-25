@@ -1,6 +1,10 @@
 .section {
 }
 
+.section--sub-introduction {
+  margin-top: 20px;
+}
+
 .introduction__container {
   border-radius: 20px 20px 0px 0px;
   background: #fff;
@@ -91,8 +95,9 @@
 }
 
 .sub-introduction__item {
-  width: 25%;
+  width: 100%;
   padding: 50px 20px;
+  height: 100%;
   border-radius: 20px;
   background: #fff no-repeat right bottom;
   background-size: 50%;
@@ -135,4 +140,86 @@
   font-weight: 600;
   font-size: 3.5rem;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px){
+  .introduction__container {
+    padding: 0 10%;
+  }
+  .sub-introduction__item {
+    padding: 25px 20px;
+  }
+  .sub-introduction__title {
+    white-space: nowrap;
+  }
+  .form-section {
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 910px){
+  .introduction__buttons {
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+  }
+  .switch-button {
+    text-indent: -1000px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background: #D9D9D9;
+    border-radius: 100px !important;
+    border-color: #D9D9D9 !important;
+  }
+  .switch-button::content {
+    display: none;
+  }
+  .switch-button--active {
+    background: linear-gradient(62.33deg, #3D73EB 8.55%, #DE8FFF 97.98%);
+  }
+  .introduction__header h2 {
+    color: #232323;
+    font-size: 1.625rem;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    line-height: 2rem;
+  }
+  .introduction__container {
+    background-size: 100%;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .introduction__container {
+    height: 300px;
+  }
+  .form-description, .form-section h2 {
+    text-align: center;
+  }
+  .form-section h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1.55px;
+    text-transform: uppercase;
+    color: #DA22FF;
+  }
+  .form-description {
+    font-size: 1rem;
+  }
+
+  .row-to-column {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .sub-introduction__item {
+    background-size: 25%;
+  }
 }
